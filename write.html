@@ -6,33 +6,55 @@
 		.text1{text-align: center}
 	</STYLE>
 <HEAD>
-	<TITLE> Personal Information </TITLE>
+	<meta charset="utf-8">
+	<TITLE> 회원가입 페이지 </TITLE>
 </HEAD>
 <BODY BGCOLOR=#123456>
 	<P CLASS="text1">
-	<FORM ACTION="index.html" METHOD="post">
-	<TABLE WIDTH="600" HEIGHT="350" BORDER="1" CELLPADDING="5" ALIGN="center" DIV CLASS="color1" BGCOLOR=#EBEBEB>
+		<FONT SIZE="4" COLOR=#FFFFFF>
+	<B> 회원가입 페이지 </B></FONT>
+	</P>
+	<HR>
+	<FORM ACTION="OK.html" METHOD="post">
+	<TABLE WIDTH="600" HEIGHT="800" BORDER="1" CELLPADDING="5" ALIGN="center" DIV CLASS="color1" BGCOLOR=#EBEBEB>
 	<TR>
-		<TD><P CLASS="text1"> ID </P></TD>
-		<TD> <INPUT TYPE="text" NAME="ID" SIZE="10"> </TD>
+		<TD><P CLASS="text1"> 아이디 </P></TD>
+		<TD> <INPUT TYPE="text" NAME="ID" SIZE="40"> </TD>
 	</TR>
 	<TR>
-		<TD><P CLASS="text1"> PASSWORD </P></TD>
-		<TD> <INPUT TYPE="password" NAME="password" SIZE="10"> </TD>
+		<TD><P CLASS="text1"> 패스워드 </P></TD>
+		<TD> <INPUT TYPE="password" NAME="password" SIZE="40"> </TD>
+	</TR>
+	<TR>
+		<TD><P CLASS="text1"> 이메일 </P></TD>
+		<TD> <INPUT TYPE="text" NAME="Email" SIZE="40"> </TD>
+	</TR>
+	<TR>
+		<TD><P CLASS="text1"> 닉네임 </P></TD>
+		<TD> <INPUT TYPE="text" NAME="name" SIZE="40"> </TD>
 	</TR>
 
 	<TR>
-		<TD><P CLASS="text1"> 글 쓰기 </P></TD>
-		<TD> <SELECT SIZE="1" NAME="job">
-		<OPTION SELECTED> 신고 </OPTION> 
-		<OPTION> 판매 </OPTION> 
-		</SELECT>
-		<TEXTAREA ROWS="4" COLS="60" NAME="Intro"></TEXTAREA></TD>
+		<TD><P CLASS="text1"> 전화번호 </P></TD>
+		<TD> <INPUT TYPE="TEXT" NAME="tel1" SIZE="3"> - <INPUT NAME="tel2" SIZE="4"> - <INPUT NAME="tel3" SIZE="4"> </TD>
 	</TR>
 
 	<TR>
-		<TD><P CLASS="text1"> INTRODUCE YOURSELF </P></TD>
-		<TD> <TEXTAREA ROWS="7" COLS="60" NAME="Intro"></TEXTAREA> </TD>
+		<TD><P CLASS="text1"> 위치 </P></TD>
+		<TD> <SELECT SIZE="1" NAME="location">
+		<OPTION SELECTED> 모시래마을 </OPTION> 
+		<OPTION> 신촌 </OPTION> 
+		<OPTION> 단월 </OPTION> 
+		<OPTION> 기숙사 </OPTION>
+		</SELECT></TD>
+	</TR>
+
+	<TR>
+		<TD><P CLASS="text1"> 성별 </P></TD>
+		<TD> <INPUT TYPE="radio" NAME="btn" VALUE="male"
+		CHECKED>남성&nbsp;&nbsp;
+		<INPUT TYPE="radio" NAME="btn" VALUE="female">여성
+		 </TD>
 	</TR>
 	<TR>
 		<TD COLSPAN="2" ALIGN="center">
