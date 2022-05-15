@@ -8,6 +8,16 @@
 <HEAD>
 	<meta charset="utf-8">
 	<TITLE> 회원가입 페이지 </TITLE>
+	<script> function check() {
+		form = document.sendmail;
+		if ( form.form_user.value == '' ) {
+			alert('받는사람의 메일 주소를 입력해주세요.');
+			form.form_user.focus();
+			return false;
+		}
+	form.submit();
+	}
+	</script>
 </HEAD>
 <BODY BGCOLOR=#123456>
 	<P CLASS="text1">
@@ -27,7 +37,11 @@
 	</TR>
 	<TR>
 		<TD><P CLASS="text1"> 이메일 </P></TD>
-		<TD> <INPUT TYPE="text" NAME="Email" SIZE="40"> </TD>
+		<TD> <INPUT TYPE="text" NAME="Email" SIZE="40"><br>
+				<form action="sendmail.php" method="post">
+				<input type='button' value='메일인증하기' onclick="check()" >
+				</form>
+		</TD>
 	</TR>
 	<TR>
 		<TD><P CLASS="text1"> 닉네임 </P></TD>
